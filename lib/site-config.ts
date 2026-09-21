@@ -1,4 +1,4 @@
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://opctalent.example";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://opctalent.com";
 
 export const siteConfig = {
   name: "OPCTALENT",
