@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "talento",
     "empleo",
     "reclutamiento",
+    "control de asistencia",
+    "procesamiento de planillas",
+    "planilla única",
     "El Salvador",
   ],
   alternates: {
@@ -42,7 +45,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#f5f2e9",
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {

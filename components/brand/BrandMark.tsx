@@ -1,29 +1,32 @@
+import Image from "next/image";
+
 type BrandMarkProps = {
   inverse?: boolean;
+  priority?: boolean;
 };
 
 /**
- * Punto único para reemplazar el wordmark provisional por el logo definitivo.
- * Conserva el enlace y ajusta únicamente el contenido visual de este componente.
+ * Punto único para gestionar el logo oficial en header y footer.
+ * El archivo fuente vive en public/brand/opc-talent-logo.png.
  */
-export function BrandMark({ inverse = false }: BrandMarkProps) {
+export function BrandMark({ inverse = false, priority = false }: BrandMarkProps) {
   return (
     <a
       href="#inicio"
       aria-label="OPCTALENT, ir al inicio"
-      className={`inline-flex min-h-11 items-center gap-2.5 font-bold tracking-[-0.03em] ${
-        inverse ? "text-paper" : "text-ink"
+      className={`inline-flex min-h-11 items-center rounded-sm bg-white px-1.5 py-1 ${
+        inverse ? "ring-1 ring-white/20" : "ring-1 ring-line/70"
       }`}
     >
-      <span
-        aria-hidden="true"
-        className={`grid size-7 place-items-center border-2 text-[0.7rem] font-black leading-none ${
-          inverse ? "border-accent text-accent" : "border-brand text-brand"
-        }`}
-      >
-        O
-      </span>
-      <span className="text-[1.05rem]">OPC<span className={inverse ? "text-accent" : "text-brand"}>TALENT</span></span>
+      <Image
+        src="/brand/opc-talent-logo.png"
+        alt=""
+        width={1536}
+        height={510}
+        priority={priority}
+        sizes="(max-width: 639px) 148px, 184px"
+        className="h-auto w-[9.25rem] sm:w-[11.5rem]"
+      />
     </a>
   );
 }

@@ -13,24 +13,34 @@ import { siteConfig } from "@/lib/site-config";
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "Service",
-  name: "Creación de CV profesional por WhatsApp",
+  "@type": "Organization",
+  name: siteConfig.name,
+  legalName: siteConfig.legalName,
   description: siteConfig.description,
   url: siteConfig.siteUrl,
-  areaServed: {
-    "@type": "Country",
-    name: "El Salvador",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "San Salvador Centro",
+    addressCountry: "SV",
   },
-  provider: {
-    "@type": "Organization",
-    name: siteConfig.name,
-    url: siteConfig.siteUrl,
-  },
-  availableChannel: {
-    "@type": "ServiceChannel",
-    serviceUrl: `https://wa.me/${siteConfig.whatsapp.number}`,
-    availableLanguage: "es",
-  },
+  makesOffer: [
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Creación de CV profesional por WhatsApp",
+        areaServed: "El Salvador",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Control de asistencia y procesamiento de planillas",
+        areaServed: "El Salvador",
+      },
+    },
+  ],
 };
 
 export default function Home() {

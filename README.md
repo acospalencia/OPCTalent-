@@ -20,7 +20,8 @@ Abre `http://localhost:3000`.
 
 ## Configuración
 
-- Marca provisional: `components/brand/BrandMark.tsx`
+- Logo oficial: `public/brand/opc-talent-logo.png`
+- Componente de marca: `components/brand/BrandMark.tsx`
 - WhatsApp, mensajes y URL del sitio: `lib/site-config.ts`
 - Dominio canónico: define `NEXT_PUBLIC_SITE_URL` a partir de `.env.example`
 

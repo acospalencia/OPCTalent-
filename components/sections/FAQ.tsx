@@ -27,6 +27,18 @@ const questions = [
     question: "¿Puedo actualizar mi información después?",
     answer: "Sí. Puedes volver a escribirnos para comunicar cambios en tu experiencia, estudios o habilidades y consultar cómo actualizar tu información.",
   },
+  {
+    question: "¿Qué servicios ofrece OPCTALENT a las empresas?",
+    answer: "Brindamos apoyo para control de asistencia e incidencias, procesamiento de planillas, preparación de planilla única y reportes laborales. También acompañamos búsquedas de talento mediante nuestra red de candidatos.",
+  },
+  {
+    question: "¿Cómo funciona el procesamiento de planillas?",
+    answer: "La operación parte de la recepción de asistencia y novedades, continúa con la validación y el procesamiento, pasa por una revisión de la empresa y finaliza con la entrega de los archivos y reportes acordados.",
+  },
+  {
+    question: "¿Cómo se maneja la información laboral y salarial?",
+    answer: "Se utiliza para ejecutar el servicio contratado, con acceso restringido y bajo los acuerdos de confidencialidad y tratamiento de datos que se formalicen entre las partes.",
+  },
 ];
 
 export function FAQ() {

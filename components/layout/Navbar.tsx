@@ -8,7 +8,7 @@ import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
 const navItems = [
   { href: "#como-funciona", label: "Cómo funciona" },
   { href: "#candidatos", label: "Para candidatos" },
-  { href: "#empresas", label: "Para empresas" },
+  { href: "#empresas", label: "Servicios para empresas" },
   { href: "#preguntas", label: "Preguntas frecuentes" },
 ];
 
@@ -18,7 +18,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper/95">
       <nav className="section-shell flex min-h-18 items-center justify-between" aria-label="Navegación principal">
-        <BrandMark />
+        <BrandMark priority />
 
         <div className="hidden items-center gap-5 lg:flex">
           <ul className="flex items-center gap-1">

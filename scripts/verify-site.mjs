@@ -1,5 +1,17 @@
+import { readFile } from "node:fs/promises";
+
 const origin = process.env.VERIFY_ORIGIN ?? "http://127.0.0.1:3117";
-const expectedWhatsAppNumber = "50370576618";
+const configSource = await readFile(
+  new URL("../lib/site-config.ts", import.meta.url),
+  "utf8",
+);
+const configuredNumber = configSource.match(/number:\s*"(\d+)"/);
+
+if (!configuredNumber) {
+  throw new Error("No fue posible leer el número de WhatsApp desde lib/site-config.ts.");
+}
+
+const expectedWhatsAppNumber = configuredNumber[1];
 
 const response = await fetch(origin);
 if (!response.ok) {
