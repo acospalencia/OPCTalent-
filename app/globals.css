@@ -2,13 +2,17 @@
 
 :root {
   --paper: #ffffff;
-  --surface: #ffffff;
-  --ink: #102019;
-  --muted: #58645e;
-  --line: #c9cec5;
-  --green: #145b40;
-  --green-dark: #0c3c2c;
-  --lime: #d9f56f;
+  --surface: #f3f5fd;
+  --ink: #1b2978;
+  --muted: #5059ae;
+  --line: #a5d7ec;
+  --brand-blue: #1e3f93;
+  --brand-navy: #1b2978;
+  --brand-cyan: #0db8dc;
+  --brand-violet: #6341cb;
+  --green: var(--brand-blue);
+  --green-dark: var(--brand-navy);
+  --lime: var(--brand-cyan);
 }
 
 @theme inline {
@@ -17,9 +21,9 @@
   --color-ink: var(--ink);
   --color-muted: var(--muted);
   --color-line: var(--line);
-  --color-brand: var(--green);
-  --color-brand-dark: var(--green-dark);
-  --color-accent: var(--lime);
+  --color-brand: var(--brand-blue);
+  --color-brand-dark: var(--brand-navy);
+  --color-accent: var(--brand-cyan);
   --font-sans: "Aptos", "Segoe UI Variable", "Segoe UI", sans-serif;
   --font-mono: "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
 }
@@ -44,7 +48,7 @@ body {
 }
 
 ::selection {
-  background: var(--lime);
+  background: var(--brand-cyan);
   color: var(--ink);
 }
 
@@ -57,7 +61,7 @@ summary {
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible {
-  outline: 3px solid var(--lime);
+  outline: 3px solid var(--brand-cyan);
   outline-offset: 4px;
 }
 

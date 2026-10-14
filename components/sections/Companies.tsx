@@ -42,7 +42,7 @@ const operationSteps = [
 
 export function Companies() {
   return (
-    <section id="empresas" aria-labelledby="empresas-title" className="bg-brand py-20 text-white sm:py-28">
+    <section id="empresas" aria-labelledby="empresas-title" className="bg-ink py-20 text-white sm:py-28">
       <div className="section-shell">
         <div className="grid gap-10 md:grid-cols-[0.62fr_1.38fr] md:items-start">
           <p className="eyebrow text-accent">Servicios para empresas</p>

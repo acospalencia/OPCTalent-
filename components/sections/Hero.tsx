@@ -30,8 +30,8 @@ export function Hero() {
         </div>
 
         <div className="relative mx-auto w-full max-w-[34rem] lg:mx-0" aria-hidden="true">
-          <div className="absolute -top-5 -right-5 -z-10 h-full w-full border border-brand sm:-top-7 sm:-right-7" />
-          <div className="border-2 border-ink bg-surface p-4 shadow-[8px_8px_0_0_#102019] sm:p-6 sm:shadow-[12px_12px_0_0_#102019]">
+          <div className="absolute -top-5 -right-5 -z-10 h-full w-full border sm:-top-7 sm:-right-7" style={{ borderColor: "var(--brand-violet)" }} />
+          <div className="border-2 border-ink bg-surface p-4 shadow-[8px_8px_0_0_#1b2978] sm:p-6 sm:shadow-[12px_12px_0_0_#1b2978]">
             <div className="flex items-center justify-between border-b border-line pb-4">
               <p className="font-mono text-xs font-bold tracking-widest uppercase">Perfil en construcción</p>
               <span className="bg-accent px-2 py-1 font-mono text-[0.68rem] font-bold uppercase">En conversación</span>

@@ -45,13 +45,24 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#ffffff",
+  themeColor: "#1b2978",
 };
 
 const pageColors = {
   "--paper": "#ffffff",
-  "--surface": "#ffffff",
+  "--surface": "#f3f5fd",
+  "--ink": "#1b2978",
+  "--muted": "#5059ae",
+  "--line": "#a5d7ec",
+  "--brand-blue": "#1e3f93",
+  "--brand-navy": "#1b2978",
+  "--brand-cyan": "#0db8dc",
+  "--brand-violet": "#6341cb",
+  "--green": "#1e3f93",
+  "--green-dark": "#1b2978",
+  "--lime": "#0db8dc",
   backgroundColor: "#ffffff",
+  color: "#1b2978",
 } as CSSProperties;
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {

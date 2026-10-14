@@ -4,7 +4,7 @@ export function Problem() {
       <div className="section-shell grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:gap-24">
         <div>
           <p className="eyebrow text-brand">El punto de partida</p>
-          <p className="mt-5 text-[clamp(3.5rem,10vw,8rem)] leading-none font-black tracking-[-0.07em] text-brand" aria-hidden="true">Otra<br />vez.</p>
+          <p className="mt-5 text-[clamp(3.5rem,10vw,8rem)] leading-none font-black tracking-[-0.07em]" style={{ color: "var(--brand-violet)" }} aria-hidden="true">Otra<br />vez.</p>
         </div>
         <div className="lg:pt-12">
           <h2 id="problema-title" className="text-balance text-3xl leading-tight font-bold tracking-[-0.035em] sm:text-5xl">
